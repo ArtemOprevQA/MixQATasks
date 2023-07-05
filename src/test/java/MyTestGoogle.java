@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-@Test
+@Test (description = "Searh request execution")
 public class MyTestGoogle {
 
     public void openBrowser(){
