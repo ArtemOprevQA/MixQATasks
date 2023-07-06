@@ -8,10 +8,9 @@ public class ThirdTask {
     @DataProvider(name = "DP")
     public Object[][] dpMethod(Method ageCalc){
         return new Object[][]{
-                {2023, 7, 4}, // клиенту = 0
-                {2004, 7, 4}, // клиенту = 18
-                {1989, 8, 15}, // клиенту > 18
-                {2006, 11, 23} // клиенту < 18
+                {RandomDateGeneratorClass.GeneratorOfRandomYear(), RandomDateGeneratorClass.GeneratorOfRandomMonth(), RandomDateGeneratorClass.GeneratorOfRandomDay()},
+                {RandomDateGeneratorClass.GeneratorOfRandomYear(), RandomDateGeneratorClass.GeneratorOfRandomMonth(), RandomDateGeneratorClass.GeneratorOfRandomDay()},
+                {RandomDateGeneratorClass.GeneratorOfRandomYear(), RandomDateGeneratorClass.GeneratorOfRandomMonth(), RandomDateGeneratorClass.GeneratorOfRandomDay()}
         };
     }
 
