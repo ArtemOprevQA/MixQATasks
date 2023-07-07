@@ -13,7 +13,7 @@ public class RandomDateGeneratorClass {
 
         int randomYear;
 
-        randomYear = (int) (1942 + Math.random() * 99);
+        randomYear = (int) (1942 + Math.random() * 82);
 
         return randomYear;
     }
