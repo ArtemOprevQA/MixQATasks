@@ -14,11 +14,11 @@ public class ThirdTask {
         };
     }
 
-    @Test(description = "Check that the client is adult", dataProvider = "DP")
+    @Test(description = "Check that the client is 18 yo", dataProvider = "DP")
 
     public void testClient(int year, int month, int dayOfMonth){
 
-        Assert.assertTrue(ClAge.ageCalc(year, month, dayOfMonth) >= 18, "The client isn't adult");
+        Assert.assertTrue(ClAge.ageCalc(year, month, dayOfMonth) == 18, "The client isn't 18 years old");
 
     }
 }
